@@ -1,9 +1,31 @@
 # AI Workshop
 
+Date: 10-Feb-2026
+Start: 09:00
+End: 16:00
+
+## Preparation
+
+### Participants  
+- AI Agent  
+- GitHub Account
+- VS Code
+- GitHub Copilot (Extension)
+- uv
+
+### Organizers  
+- Open Router Account & API Key
+- OpenAI API Key
+- Investigate if GH Copilot free can be used with OpenRouter
+- Get in contact with participants
+- Time planning for workshop topics
+
+## Icebreaker/Opening
 
 ## Covered Tools and Libraries
 
 ### RF-MCP  
+
 Generate Robot Framework Tests from Naturual Language  
 https://github.com/manykarim/rf-mcp
 
@@ -30,6 +52,7 @@ https://github.com/manykarim/rf-mcp
 ----
 
 ### SelfHealing-Agents  
+
 Repair locator failures during runtime and generate report
 https://github.com/MarketSquare/robotframework-selfhealing-agents
 
@@ -37,22 +60,47 @@ https://github.com/MarketSquare/robotframework-selfhealing-agents
 - Installation and Setup (10 minutes)
 - Running examples for self-healing
 - Self-Healing report
+- Task: Heal broken tests of sample app
+- Alternative: Using RF-MCP for Self-Healing
 
 ----
 
-### DocTest Ai
--	AI support for visual difference detection, OCR and document chat
--	https://github.com/manykarim/robotframework-doctestlibrary
+### DocTest Ai  
+
+AI support for visual difference detection, OCR and document chat
+https://github.com/manykarim/robotframework-doctestlibrary
 
 ----
 
-### RobotAiAgent
--	Use LLM Chat and Tools during Robot Framework Test Run
--	https://github.com/d-biehl/robotframework-aiagent
+### RobotAiAgent  
+
+Use LLM Chat and Tools during Robot Framework Test Run
+https://github.com/d-biehl/robotframework-aiagent
+
+- Using Chat Keyword
+- Output Types
+- Tool usage
+- MCP Server usage
+- Test Data Generation
+- Non-Deterministic Testing
 
 ----
+
+### RobotCode  
+
+Use Tools to  
+- read Library Documentation
+- get infromation about imported Libraries
+
+### General
+
+- GH Copilot Usage, Tools, Slash Commands
+- Agent Skills
+- Local LLM usage
 
 ## Example Apps
 
-
-
+- https://demoshop.makrocode.de/  
+- https://github.com/d-biehl/carconfig-playground  
+- https://www.saucedemo.com/
+- https://restful-booker.herokuapp.com/apidoc/index.html
