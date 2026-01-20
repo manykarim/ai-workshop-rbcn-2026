@@ -14,3 +14,8 @@
 
 ## Agent Skills
 
+## Other Helpful MCP Servers
+
+- ChromeDevTools
+- Context7
+- GitHub
