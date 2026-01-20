@@ -16,8 +16,9 @@ Instead of describing a complete scenario upfront, you can build tests increment
 ### Starting a Session
 
 ```
-Create a new rf-mcp session for web testing with Browser Library.
-Open https://www.saucedemo.com/
+Use RobotMCP to create a session for web testing using Browser Library
+
+Open https://www.saucedemo.com/ with headless=False
 ```
 
 ### Adding Steps Incrementally

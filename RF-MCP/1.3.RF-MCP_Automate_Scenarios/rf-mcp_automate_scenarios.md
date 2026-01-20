@@ -26,7 +26,9 @@ A typical prompt includes:
 ### Basic Web Test (Browser Library)
 
 ```
-Create a new session and use RobotMCP to write a test suite and execute it step wise.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
+
 - Open https://todomvc.com/examples/react/dist/
 - Enter several Todos
 - Assert number of ToDos
@@ -40,7 +42,9 @@ Execute step by step and build final test suite afterwards
 ### Web Test with SeleniumLibrary
 
 ```
-Create a new session and use RobotMCP to write a test suite and execute it step wise.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
+
 - Open https://todomvc.com/examples/react/dist/
 - Enter several Todos
 - Assert number of ToDos
@@ -55,7 +59,9 @@ Use Selenium Library
 ### Web Test with Variables
 
 ```
-Create a new session and use RobotMCP to write a test suite and execute it step wise.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
+
 - Open https://todomvc.com/examples/react/dist/
 - Enter several Todos
 - Assert number of ToDos
@@ -71,7 +77,8 @@ Execute step by step and build final test suite afterwards
 ### E-Commerce Flow (Sauce Demo)
 
 ```
-Use RobotMCP to create a TestSuite and execute it step wise.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
 
 - Open https://www.saucedemo.com/
 - Login with valid user
@@ -89,7 +96,8 @@ Execute step by step and build final test suite afterwards
 ### E-Commerce with SeleniumLibrary and Variables
 
 ```
-Use RobotMCP to create a TestSuite and execute it step wise.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
 
 - Open https://www.saucedemo.com/
 - Login with valid user
@@ -109,7 +117,8 @@ Execute step by step and build final test suite afterwards
 ### Alternative Demo Shop
 
 ```
-Use RobotMCP to create a TestSuite and execute it step wise.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
 
 - Open https://demoshop.makrocode.de/
 - Add item to cart
@@ -129,8 +138,9 @@ Execute step by step and build final test suite afterwards
 ### RESTful API Test
 
 ```
-Use RobotMCP to write a test suite and execute it step wise.
-Read https://restful-booker.herokuapp.com/apidoc/index.html for information about webservice
+Fetch https://restful-booker.herokuapp.com/apidoc/index.html for information about webservice
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
 
 - Read a booking and assert the response and its values
 - Create a new booking and assert the response and its values
@@ -155,8 +165,10 @@ Execute the test suite stepwise and build the final version afterwards.
 ```
 Create an example .xml file for Books and Authors.
 
-Use RobotMCP to create a TestSuite that parses the XML file, checks several nodes 
-and attributes and do assertions.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
+
+Parse the XML file, checks several nodes and attributes and do assertions.
 Execute it stepwise and afterwards create a final test suite
 ```
 
@@ -173,7 +185,8 @@ Execute it stepwise and afterwards create a final test suite
 ### Mobile App Test with Appium
 
 ```
-Use RobotMCP to write a test suite for mobile application testing and execute it step wise.
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
 
 - Open the mobile application tests/appium/SauceLabs.apk
 - Perform a login action
