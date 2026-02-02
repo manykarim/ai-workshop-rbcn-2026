@@ -21,7 +21,7 @@ A typical prompt includes:
 
 ---
 
-## Web Application Testing
+## Web Application Testing Examples
 
 ### Basic Web Test (Browser Library)
 
@@ -37,6 +37,7 @@ It shall:
 - Close Browser
 
 Execute step by step and build final test suite afterwards
+Use headless=False
 ```
 
 ### Web Test with SeleniumLibrary
@@ -91,6 +92,8 @@ It shall:
 - Assert checkout was successful
 
 Execute step by step and build final test suite afterwards
+Use headless=False
+
 ```
 
 ### E-Commerce with SeleniumLibrary and Variables
@@ -114,26 +117,9 @@ Use variables to store locator values
 Execute step by step and build final test suite afterwards
 ```
 
-### Alternative Demo Shop
-
-```
-Use RobotMCP to create a test suite and execute it step wise.
-It shall:
-
-- Open https://demoshop.makrocode.de/
-- Add item to cart
-- Assert item was added to cart
-- Add another item to cart
-- Assert another item was added to cart
-- Checkout
-- Assert checkout was successful
-
-Execute step by step and build final test suite afterwards
-```
-
 ---
 
-## API / HTTP Testing
+## API / HTTP Testing Examples
 
 ### RESTful API Test
 
@@ -158,7 +144,7 @@ Execute the test suite stepwise and build the final version afterwards.
 
 ---
 
-## XML Testing
+## XML Testing Examples
 
 ### XML Parsing and Validation
 
@@ -180,9 +166,9 @@ Execute it stepwise and afterwards create a final test suite
 
 ---
 
-## Mobile Testing
+## Mobile Testing Examples
 
-### Mobile App Test with Appium
+### Mobile App Test with local Appium
 
 ```
 Use RobotMCP to create a test suite and execute it step wise.
@@ -250,14 +236,77 @@ Add one of these lines to your prompt:
 
 ---
 
-## Example Session Flow
+## 📋 Tasks (15 Minutes)
+
+### 1) Try out some example prompts
+
+Make yourself familiar with MCP Server usage by running some of the example prompts above.
+
+For example:
 
 ```
-Human: "Use RobotMCP to create a test for saucedemo.com login"
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
 
-Agent: [Analyzes scenario, recommends Browser Library]
-       [Creates session]
-       [Executes: New Browser → New Page → Fill username → Fill password → Click login]
-       [Validates each step succeeds]
-       [Generates test suite file]
+- Open https://www.saucedemo.com/
+- Login with valid user
+- Assert login was successful
+- Add item to cart
+- Assert item was added to cart
+- Add another item to cart
+- Assert another item was added to cart
+- Checkout
+- Assert checkout was successful
+
+Execute step by step and build final test suite afterwards
+Use headless=False
+
 ```
+
+Try out different models, e.g.
+
+- Claude Haiku
+- Claude Sonnet
+- GPT-5.X Codex
+- GPT 4.1
+- GPT-4o
+
+#### Questions
+- What do you experience?
+- Are there some models better suited for the task? 
+
+### 2) Automate a more complex Web Shop
+
+Check out https://demoshop.makrocode.de/
+
+Investigate how to complete an order
+
+Write a prompt to automate the order process with rf-mcp
+
+### Alternative Demo Shop
+
+```
+Use RobotMCP to create a test suite and execute it step wise.
+It shall:
+
+- Open https://demoshop.makrocode.de/
+- Add item to cart
+- Assert item was added to cart
+- Add another item to cart
+- Assert another item was added to cart
+- Checkout
+- Assert checkout was successful
+
+Execute step by step and build final test suite afterwards
+Use headless=False
+
+```
+
+### 3) Automate a REST API
+
+The Webshop above also offers an API
+
+- https://demoshop.makrocode.de/docs
+- https://demoshop.makrocode.de/openapi.json
+
+Are you able to create API Test Cases using a prompt?
