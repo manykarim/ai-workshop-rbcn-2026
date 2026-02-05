@@ -45,5 +45,6 @@
   "postCreateCommand": " uv sync --dev --all-packages --all-groups && uv run rfbrowser init --with-deps",
   // "postCreateCommand": "sudo apt-get update && sudo apt-get install -y wget gnupg && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/google-chrome-keyring.gpg && echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list && sudo apt-get update && sudo apt-get install -y google-chrome-stable firefox-esr && uv run rfbrowser init --with-deps",
   "forwardPorts": [3000, 6080, 5901, 3100],
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "runArgs": ["--cap-add=SYS_ADMIN"]
 }
