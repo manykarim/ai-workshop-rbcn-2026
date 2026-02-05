@@ -7,7 +7,6 @@ Test Tags       web    ac-5    add-to-cart
 *** Test Cases ***
 WEB-001_AC-5_Add_To_Cart
     [Documentation]    This test verifies that adding a product to the cart updates the cart badge count.
-     New Browser    chromium    headless=False]
     New Browser    chromium    headless=False
     New Context
     New Page
