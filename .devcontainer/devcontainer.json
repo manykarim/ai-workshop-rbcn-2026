@@ -3,10 +3,6 @@
   // "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "build": { "dockerfile": "Dockerfile" },
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "installTools": false,
-      "version": "os-provided"
-    },
     "ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {
       "shellautocompletion": true,
       "version": "latest"
