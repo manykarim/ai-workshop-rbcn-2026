@@ -23,9 +23,10 @@ And we are available for questions after the workshop.
 ## Preparation
 
 ### Participants  
-- AI Agent  
 - GitHub Account
+- AI Agent  (e.g. GitHub Copilot Free)
 - VS Code
+- RobotCode
 - GitHub Copilot (Extension)
 - uv
 
@@ -33,9 +34,6 @@ And we are available for questions after the workshop.
 - Open Router Account & API Key
     -  Models: Devstral
 - OpenAI API Key
-- Investigate if GH Copilot free can be used with OpenRouter
-- Get in contact with participants
-- Time planning for workshop topics
 
 ## Icebreaker/Opening
 
@@ -158,7 +156,6 @@ Possible Solutions:
 ## Example Apps
 
 - https://demoshop.makrocode.de/  
-- https://github.com/d-biehl/carconfig-playground  
+- https://carconfig.makrocode.de/
 - https://www.saucedemo.com/
 - https://restful-booker.herokuapp.com/apidoc/index.html
-- https://carconfig.makrocode.de/
