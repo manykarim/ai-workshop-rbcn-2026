@@ -1,9 +1,19 @@
 [project]
-name = "ai-workshop-rbcn-2026"
+name = "ai-workshop"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "rf-mcp[all]>=0.26.0",
+authors = [{ name = "Daniel Biehl", email = "dbiehl@live.de" }]
+requires-python = ">=3.12"
+dependencies = ["rf-mcp[all]>=0.26.0", "robotframework-aiagent>=0.0.1"]
+
+
+[build-system]
+requires = ["uv_build>=0.9.28,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "robotframework-robocop>=7.2.0",
+    "ruff>=0.15.0",
 ]

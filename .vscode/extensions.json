@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "d-biehl.robotcode",
+        "github.copilot-chat",
+        "tamasfe.even-better-toml",
+        "charliermarsh.ruff"
+    ]
+}

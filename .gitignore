@@ -1,0 +1,47 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# VSCode
+.vscode/*
+#!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+!.vscode/*.code-snippetsde/mcp.json
+
+# macOS
+.DS_Store
+
+# robot
+results/
+.robot.toml
+
+# rust
+target/
+
+# Added by cargo
+
+/target
+
+# trash
+trash/
+.trash/
+
+# temp files
+*.tmp
+*.log
+*.bak
+*.swp
+*~
+
+# playground
+playground/
