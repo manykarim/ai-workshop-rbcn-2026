@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 authors = [{ name = "Daniel Biehl", email = "dbiehl@live.de" }]
 requires-python = ">=3.13"
-dependencies = ["rf-mcp[all]>=0.26.0", "robotframework-aiagent>=0.0.1"]
+dependencies = ["rf-mcp[all]>=0.26.0", "robotframework-aiagent>=0.0.1", "robotframework-selfhealing-agents">=0.2.0dev1]
 
 
 [build-system]
