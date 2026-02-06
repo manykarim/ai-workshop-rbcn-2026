@@ -83,5 +83,49 @@ LOCATOR_TYPE="css"
 REPORT_DIRECTORY="full-path-for-output-files"
 ```
 
-### Robot Framework Heal
+## Using CLI Agents
 
+### GitHub Copilot CLI
+
+#### Add MCP Server
+
+Start Github Copilot
+
+```
+copilot
+```
+
+Then add the MCP server:
+
+```
+/mcp add
+```
+
+```
+Server Name:
+RobotMCP
+
+Server Type:
+2 (STDIO)
+
+Command:
+uv run -m robotmcp.server
+
+Environment Variables:
+(leave empty)
+
+Tools:
+*
+```
+
+#### Using Copilot with RobotMCP
+
+Send a single prompt to Copilot:
+
+```
+copilot -p "Use RobotMCP to create a test suite that opens https://www.saucedemo.com/ and performs login with username and password. Use Selenium Library." --allow-all
+```
+
+```
+copilot -p "Check test results in output.xml, Rerun all failed tests stepwise using #RobotMCP , Fix them if root cause are locator failures“  --allow-all-tools
+```
