@@ -100,29 +100,30 @@ Login Test
     Page Should Contain Element    css:.cart_item
     Close Browser
 
-Refactor this test to use proper keyword-driven structure with:
+Use #robotmcp to refactor this test to use proper keyword-driven structure with:
 - Reusable keywords for login, add to cart, and navigation
 - Variables for credentials and locators
-- Proper setup and teardown
+and execute each step to verify it works.
 ```
 
 ### Refactor to Page Object Pattern
 
 ```
-Take this test suite and refactor it using the page object pattern:
+Use #robotmcp to refactor this test suite using a page object design pattern:
 
-[paste your existing test]
-
-Create separate keyword sections for:
+Create separate resource files for:
 - LoginPage keywords
 - InventoryPage keywords  
 - CartPage keywords
 - CheckoutPage keywords
 
 Each page should have its own locators as variables.
+Then update the test case to use these page object keywords.
+
+Execute each step to verify the refactored test works correctly.
 ```
 
-### Refactor to Data-Driven Structure
+### Refactor to Data-Driven Structure (to be implemented)
 
 ```
 I have this login test that I want to run with multiple user types:
@@ -135,7 +136,7 @@ Refactor it to use a test template with these test data combinations:
 - invalid_user / wrong_password (should show error)
 ```
 
-### Refactor to BDD/Gherkin Style
+### Refactor to BDD/Gherkin Style (to be implemented)
 
 ```
 Convert this test to use BDD-style Given/When/Then keywords:
@@ -145,25 +146,10 @@ Convert this test to use BDD-style Given/When/Then keywords:
 Use descriptive keyword names that read like natural language.
 ```
 
-### Refactor for Better Maintainability
-
-```
-Review this test and refactor it for better maintainability:
-
-[paste your existing test]
-
-Please:
-- Extract magic strings into variables
-- Add meaningful documentation
-- Improve keyword names for clarity
-- Add appropriate tags
-- Reduce duplication
-```
-
 ### Migrate Between Libraries
 
 ```
-Convert this SeleniumLibrary test to use Browser Library instead:
+Use #robotmcp to convert this SeleniumLibrary test to use Browser Library:
 
 *** Settings ***
 Library    SeleniumLibrary
@@ -177,6 +163,8 @@ Example Test
     Close Browser
 
 Keep the same test logic but use Browser Library syntax and best practices.
+Execute each step to verify it works after migration.
+Build and save the final test suite after the refactor is complete.
 ```
 
 ---
@@ -199,30 +187,6 @@ Then create a new test that:
 Build the test stepwise and generate the final suite with proper imports.
 ```
 
-### Extend Existing Keywords
-
-```
-Import my existing resource file: resources/pages/LoginPage.resource
-
-I want to extend it with new keywords for:
-- Login with remember me option
-- Login and verify welcome message
-- Failed login assertion
-
-Execute each new keyword to verify it works, then generate an updated resource file.
-```
-
-### Combine Multiple Resources
-
-```
-I have these existing resource files:
-- resources/CommonKeywords.resource
-- resources/LoginPage.resource
-- resources/ProductPage.resource
-
-Create a new end-to-end test that uses keywords from all three resources.
-Import them into the session and build a complete checkout flow test.
-```
 
 ### Use Existing Test as Template
 
@@ -271,7 +235,7 @@ Execute stepwise to verify everything works together.
 ### Stepwise Development with Existing Resources
 
 ```
-Create a new session and import my existing LoginPage.resource.
+Use #robotmcp to create a new session and import my existing LoginPage.resource.
 I want to build a new test interactively.
 
 First, use the existing Login keyword to authenticate.
@@ -282,10 +246,11 @@ Then let's explore the dashboard and create new keywords as we go.
 
 ```
 We just created a test stepwise for the checkout flow.
-Now refactor it to:
+Now use #robotmcp to refactor it to:
 - Match the patterns in my existing resource files
 - Extract reusable keywords to a new CheckoutPage.resource
 - Use consistent naming with my other page objects
+Execute each step to verify the refactored test still works correctly.
 ```
 
 ### Create Resources from Successful Tests
