@@ -9,11 +9,11 @@ End: 16:00
 
 09:00 - 09:30  |  Introduction and Icebreaker
 09:30 - 10:00  |  GH Copilot, Extensions and MCP Server Setup 
-10:00 - 12:30  |  RF-MCP Basics and Interactive Development
-12:30 - 13:30  |  Lunch Break
-13:30 - 15:30  |  Robot AI Agent and RobotCode
+10:00 - 12:00  |  RF-MCP, Natural Language Automation, Self-Healing
+12:00 - 13:00  |  Lunch Break
+13:00 - 15:00  |  Robot AI Agent and RobotCode
 15:30 - 16:00  |  AI Hype and Reality Discussion
-16:00          |  Closing Remarks and Next Steps
+16:00 - 16:30  |  Closing Remarks and Q/A
 
 ### Attention
 This is a rough timetable and most likely not everything will fit in the given time slots.  
@@ -76,14 +76,21 @@ https://github.com/manykarim/rf-mcp
   - API
   - XML/BuiltIn
 - Task: Single Prompt Automation (15 min)
+
+----
+
 - Prompts (automate/learn) (5 min)
 - Interactive test development (10 min)
 - Using recordings as prompt basis (5 min)
 - Test Refactoring and user keyword usage (20 min)
 - Task: Interactive Development plus Refactoring (15 min)
+
+----
+
 - Detailed MCP Tool walkthrough (15 min)
 - MCP Frontend (5  min)
-- RF-MCP Debug Bridge (5 min)
+- RF-MCP Debug Bridge (10 min)
+- Task: Debug Bridge
 
 ----
 
