@@ -6,10 +6,12 @@ Each skill is a self-contained folder with a `SKILL.md` file that explains *when
 
 Think of them as **plug‑and‑play capabilities** for AI agents.
 
+You can find more information about Agent Skills [at Claude](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) and [at GitHub Copilot](http://code.visualstudio.com/docs/copilot/customization/agent-skills) 
+
 ---
 
 ## Robot Framework Agent Skills
-The **robotframework-agentskills** repository provides Agent Skills focused on Robot Framework test automation.
+The [**robotframework-agentskills**](https://github.com/manykarim/robotframework-agentskills) repository provides Agent Skills focused on Robot Framework test automation.
 
 They enable AI agents to:
 - Understand Robot Framework results
@@ -39,20 +41,9 @@ They enable AI agents to:
 2. Ask the agent a task (e.g. *“Explain this keyword”*).
 3. The agent loads the relevant skill and follows its instructions.
 
-### From CLI / CI
-Many skills include scripts that:
-- Take JSON input
-- Produce JSON output
-
-This allows easy integration into **CI pipelines**, tooling, or automation workflows.
-
 ---
 
 ## Why Use Agent Skills?
 - Add **domain knowledge** without fine-tuning models
 - Keep AI systems **modular and maintainable**
 - Share reusable AI capabilities across teams
-
----
-
-**In short:** Agent Skills make AI agents *practically useful* for Robot Framework automation.
