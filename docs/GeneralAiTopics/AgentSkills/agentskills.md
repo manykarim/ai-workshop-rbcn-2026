@@ -41,6 +41,16 @@ They enable AI agents to:
 2. Ask the agent a task (e.g. *“Explain this keyword”*).
 3. The agent loads the relevant skill and follows its instructions.
 
+
+```bash
+use the robotframework-browser skill and explain locator chaining
+```
+
+```bash
+Use robotframework-results skill to read the results/output.xml
+and summarize failed tests, statistics, and execution details.
+``` 
+
 ---
 
 ## Why Use Agent Skills?
