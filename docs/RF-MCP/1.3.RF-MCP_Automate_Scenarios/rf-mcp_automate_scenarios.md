@@ -286,24 +286,7 @@ Investigate how to complete an order
 
 Write a prompt to automate the order process with rf-mcp
 
-### Alternative Demo Shop
-
-```
-Use RobotMCP to create a test suite and execute it step wise.
-It shall:
-
-- Open https://demoshop.makrocode.de/
-- Add item to cart
-- Assert item was added to cart
-- Add another item to cart
-- Assert another item was added to cart
-- Checkout
-- Assert checkout was successful
-
-Execute step by step and build final test suite afterwards
-Use headless=False
-
-```
+You can find some examples user-stories in the `user_stories` subfolder
 
 ### 3) Automate a REST API
 
@@ -312,4 +295,14 @@ The Webshop above also offers an API
 - https://demoshop.makrocode.de/docs
 - https://demoshop.makrocode.de/openapi.json
 
+There is also the public https://restful-booker.herokuapp.com/ API available for testing
+https://restful-booker.herokuapp.com/apidoc/index.html
+
 Are you able to create API Test Cases using a prompt?
+
+
+### 4) More sites to try out
+
+https://carconfig.makrocode.de/
+https://obstaclecourse.tricentis.com/Obstacles/List
+
