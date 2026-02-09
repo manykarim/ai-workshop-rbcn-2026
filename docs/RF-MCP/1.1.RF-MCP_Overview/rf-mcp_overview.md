@@ -87,8 +87,9 @@ Each session maintains a persistent Robot Framework `Namespace` and `ExecutionCo
 Describe a complete end-to-end scenario in natural language, and the AI agent creates a full Robot Framework test suite.
 
 ```
-"Create a test for saucedemo.com that logs in, adds two items to cart, 
-completes checkout, and verifies the success message."
+"Use #robotmcp to create a test for saucedemo.com that logs in, adds two items to cart, 
+completes checkout, and verifies the success message.  
+Execute it stepwise and build final test suite at the end"
 ```
 
 The agent analyzes the scenario, executes each step to validate it works, and generates a production-ready test file with proper structure, keywords, and documentation.
@@ -97,7 +98,7 @@ The agent analyzes the scenario, executes each step to validate it works, and ge
 Build tests incrementally through conversation. Describe one or multiple steps in human language, rf-mcp executes them immediately, and the session stays active for continued development.
 
 ```
-Human: "Open the browser and navigate to saucedemo.com"
+Human: "Use #robotmcp to open the browser and navigate to saucedemo.com"
 Agent: [executes step, shows result]
 Human: "Now fill in the username field with 'standard_user'"
 Agent: [executes step, shows result]
@@ -111,12 +112,13 @@ Use an existing test case as input and refactor it for better maintainability:
 
 - **Keyword-Driven**: Extract repeated actions into reusable keywords
 - **Page Object Pattern**: Organize locators and actions by page/component
-- **Data-Driven**: Parameterize tests for multiple data sets
-- **BDD Style**: Convert to Given/When/Then structure
+- **Data-Driven**: Parameterize tests for multiple data sets (to be implemented)
+- **BDD Style**: Convert to Given/When/Then structure (to be implemented)
 
 ```
-"Refactor this test to use a page object pattern with separate keywords 
-for LoginPage, InventoryPage, and CheckoutPage"
+"Use #robotmcp to refactor this test to use a page object pattern with separate keywords 
+for LoginPage, InventoryPage, and CheckoutPage.  
+Execute it stepwise and build final test suite at the end"
 ```
 
 ### Recording-Based Test Creation
@@ -124,7 +126,7 @@ Paste browser recordings (from Chrome DevTools Recorder, Playwright Codegen, or 
 
 ```
 Human: [pastes Chrome DevTools recording JSON]
-"Convert this recording to a Robot Framework test using Browser Library"
+"Use #robotmcp to convert this recording to a Robot Framework test using Browser Library"
 ```
 
 The agent parses the recording, maps actions to RF keywords, and creates a clean test file.
@@ -137,7 +139,7 @@ Migrate existing tests between libraries while preserving functionality:
 - Custom libraries → Standard libraries
 
 ```
-"Convert this SeleniumLibrary test to use Browser Library instead"
+"Use #robotmcp to convert this SeleniumLibrary test to use Browser Library instead"
 ```
 
 The agent handles locator syntax differences, keyword mappings, and library-specific patterns.
@@ -146,7 +148,7 @@ The agent handles locator syntax differences, keyword mappings, and library-spec
 When tests fail, use rf-mcp to diagnose and fix issues interactively:
 
 ```
-Human: "This test is failing at the checkout step, can you help debug?"
+Human: "Use #robotmcp to execute this test and fix any errors"
 Agent: [executes steps up to failure point]
 Agent: [inspects page state, suggests fix]
 Agent: "The button locator changed. Here's the updated test..."
@@ -156,26 +158,8 @@ Agent: "The button locator changed. Here's the updated test..."
 Provide an OpenAPI/Swagger specification or API documentation URL, and generate comprehensive API test suites:
 
 ```
-"Generate Robot Framework API tests for the Restful Booker API 
+"Use #robotmcp to generate Robot Framework API tests for the Restful Booker API 
 based on their documentation at https://restful-booker.herokuapp.com"
-```
-
-### Cross-Platform Test Adaptation
-Adapt existing web tests for mobile platforms or vice versa:
-
-```
-"Take this web checkout test and adapt it for the Android app using Appium"
-```
-
-### Test Data Generation
-Generate test data variations and data-driven test structures:
-
-```
-"Create a data-driven version of this login test that covers:
-- Valid credentials
-- Invalid password
-- Empty fields
-- Special characters"
 ```
 
 ### Learning & Exploration
@@ -192,11 +176,10 @@ Agent: [executes example, shows syntax and result]
 When UI changes break existing tests, rf-mcp can help identify and update broken locators:
 
 ```
-"The login page UI was updated. Can you find the new locators 
-and update this test file?"
+"The login page UI was updated. Use #robotmcp to execute the test, find new locators and update the test"
 ```
 
-The agent uses `get_page_source` to inspect the current DOM and suggests updated locators.
+The agent uses `get_session_state` to inspect the current DOM and suggests updated locators.
 
 ## Typical Workflow
 
@@ -244,6 +227,18 @@ pip install rf-mcp[web]
 
 # With all optional libraries
 pip install rf-mcp[all]
+```
+
+Using uv (recommended)
+
+```bash
+uv add rf-mcp[all]
+uv sync
+
+# Or when using uv as pip replacement
+
+uv venv
+uv pip install rf-mcp[all]
 ```
 
 ## Resources

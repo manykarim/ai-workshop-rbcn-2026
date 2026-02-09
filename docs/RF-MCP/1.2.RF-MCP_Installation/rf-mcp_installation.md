@@ -9,6 +9,15 @@
 
 ```bash
 pip install rf-mcp
+
+# Using uv (recommended)
+uv add rf-mcp
+uv sync
+
+# When using uv as pip replacement
+uv venv
+uv pip install rf-mcp
+
 ```
 
 This installs the core rf-mcp package with minimal dependencies.
@@ -43,6 +52,9 @@ After installing with the `web` extra, you need to initialize Playwright browser
 
 ```bash
 rfbrowser init
+
+# Whe using uv
+uv run rfbrowser init
 ```
 
 or alternatively:
@@ -57,6 +69,9 @@ When using the `frontend` extra, start the MCP server with the dashboard enabled
 
 ```bash
 python -m robotmcp.server --with-frontend
+
+# Using uv
+uv run -m robotmcp.server --with-frontend
 ```
 
 The dashboard is available at http://127.0.0.1:8001/ by default.
@@ -79,19 +94,25 @@ pip install rf-mcp[web]
 python -m robotmcp.server
 ```
 
-## Development Installation
-
-For contributing or development:
+Better: Use uv
 
 ```bash
-git clone https://github.com/manykarim/rf-mcp.git
-cd rf-mcp
+uv add rf-mcp[all]
+uv sync
 
-# Using uv (recommended)
-uv sync --all-extras --dev
+uv run -m robotmcp-server
+```
 
-# Or using pip
-pip install -e ".[all]"
+## Starting RobotMCP Server (only needed for http)
+
+```bash
+# With default mode stdio
+python -m robotmcp.server
+
+# With transport mode http
+python -m robotmcp.server --transport http --host 127.0.0.1 --port 8000
+
+uv run -m robotmcp.server --transport http --host 127.0.0.1 --port 8000
 ```
 
 ## MCP Client Configuration
@@ -136,7 +157,24 @@ With uv:
     "robotmcp": {
       "type": "stdio",
       "command": "uv",
-      "args": ["run", "python", "-m", "robotmcp.server"]
+      "args": ["run", "-m", "robotmcp.server"]
+    }
+  }
+}
+```
+
+Using http (requires manual server start)
+
+```bash
+uv run -m robotmcp.server --transport http --host 127.0.0.1 --port 8000
+```
+
+```json
+{
+  "servers": {
+    "robotmcp": {
+      "type": "http",
+      "url": "http://localhost:8000/mcp"
     }
   }
 }
