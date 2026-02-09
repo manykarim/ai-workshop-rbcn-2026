@@ -2,6 +2,9 @@
 
 One of the core capabilities of rf-mcp is converting natural language descriptions into executable Robot Framework tests. This chapter provides example prompts for different testing domains.
 
+**Important:** You need to set your Agent to **Agent** Mode, and allow it to use MCP Tools and access the filesystem.  
+In the beginning, each tool call will require an approval.
+
 ## How It Works
 
 1. **Describe** your test scenario in plain language
